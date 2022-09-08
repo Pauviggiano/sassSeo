@@ -1,0 +1,15 @@
+/* Navbar */
+.color-nav{
+    background-image: linear-gradient(21deg, white, rgb(245, 95, 188), rgb(196, 8, 196));
+}
+/* logo */
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.navbar-nav{
+    --bs-nav-link-color: #0a0505;
+    --bs-nav-link-hover-color: #807682b3;
+}
