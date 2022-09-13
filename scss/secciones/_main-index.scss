@@ -1,11 +1,9 @@
 //comienza el main
 
-.main{
-    background-color: rgba(242, 238, 233, 0.55);
-    min-height: 99vh;
-}
-
-.wrap{
+.main {
+  background-color: rgba(242, 238, 233, 0.55);
+  max-height: 100vh;
+  &__wrap {
     width: 100vw;
     height: 200px;
     display: flex;
@@ -16,14 +14,34 @@
     justify-content: center;
     background-image: url(../img/loto.jpg);
     background-size: cover;
-}
-.frase{
-    font-size: solid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &--frase {
+      font-size: solid;
+      font-weight: 500px;
+      font-family: $tipografia-wrap;
+    }
+  }
 }
 
-.mainGaleria{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.mainGaleria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &__p {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+// carousel */
+
+.ancho-carousel {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 5px;
+} 
+
+.cards {
+  margin: 0 auto;
+  align-items: center;
 }

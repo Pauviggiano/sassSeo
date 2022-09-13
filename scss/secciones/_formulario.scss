@@ -1,0 +1,24 @@
+/* formulario de contacto */
+.contacto .form-floating {
+  @include formulario;
+  
+}
+  
+  /* hover fe formulario */
+  .form-control:hover {
+    border: 1px solid black;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+  
+  /* boton */
+  .botom {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    padding: 2px; }
+  
+  /* hover del boton */
+  .botom:hover {
+    background-color: #e6a8f27b;
+    transition: 2ms; }
+  

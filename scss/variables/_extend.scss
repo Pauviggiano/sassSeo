@@ -1,0 +1,15 @@
+// formulario de contacto
+%formulario{
+    display: $display;
+    margin: $margin;
+    padding: $padding;
+    width: $width; 
+}
+
+// mixin
+@mixin formulario {
+    display: $display;
+    margin: $margin;
+    padding: $padding;
+    width: $width; 
+}

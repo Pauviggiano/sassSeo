@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,53 +16,43 @@
 
 .navbar-nav {
   --bs-nav-link-color: #0a0505;
-  --bs-nav-link-hover-color: #807682b3; }
+  --bs-nav-link-hover-color: $hover; }
 
 .main {
   background-color: rgba(242, 238, 233, 0.55);
-  min-height: 99vh; }
-
-.wrap {
-  width: 100vw;
-  height: 200px;
-  display: flex;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../img/loto.jpg);
-  background-size: cover; }
-
-.frase {
-  font-size: solid;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  max-height: 100vh; }
+  .main__wrap {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/loto.jpg);
+    background-size: cover; }
+    .main__wrap--frase {
+      font-size: solid;
+      font-weight: 500px;
+      font-family: "Montserrat", sans-serif; }
 
 .mainGaleria {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
-
-/* comienza el footer */
-.footer {
-  width: 100%;
-  display: flex;
-  height: 80px;
-  background-image: linear-gradient(21deg, white, #f55fbc, #c408c4);
-  padding: 0px;
-  justify-content: space-around;
-  align-items: center; }
-
-a {
-  color: black; }
-
-.footer p {
-  margin-bottom: 0; }
+  .mainGaleria__p {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .ancho-carousel {
   width: 70vw;
   margin: 0 auto;
   padding: 5px; }
+
+.cards {
+  margin: 0 auto;
+  align-items: center; }
 
 /* formulario de contacto */
 .contacto .form-floating {
@@ -87,6 +78,26 @@ a {
 .botom:hover {
   background-color: #e6a8f27b;
   transition: 2ms; }
+
+/* comienza el footer */
+.footer {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  background-image: linear-gradient(21deg, white, #f55fbc, #c408c4);
+  padding: 0px;
+  justify-content: space-around;
+  align-items: center; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: #807682b3;
+    transition: 0,2s; }
+
+.footer p {
+  margin-bottom: 0; }
 
 /* media queries */
 @media (min-width: 768px) {
